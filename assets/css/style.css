@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
 }
 /* ------------------------------------ General vars */
-.light-background{
-  background-color: #fafafa;
-}
+
 
 .main-background{
 background-color: #ede8e8;
@@ -14,6 +13,12 @@ background-color: #ede8e8;
 
 .fs-20{
   font-size: 20px;
+}
+
+.heading-name{
+  font-size: 50px;
+  font-weight: 600;
+  display: block;
 }
 
 /* ------------------------------------ Header */
@@ -47,5 +52,42 @@ header{
   width: 80px;
   border: 3px solid white;
   border-radius: 50%;
-  margin-left: 2%;
+  margin-left: 1%;
+}
+
+
+/* ------------------------------------ Portfolio} */
+.portfolio .portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+
+}
+.portfolio .portfolio-item .portfolio-item-title {
+  position: absolute;
+  opacity: 0;
+  background-color: #343a40;
+}
+.portfolio .portfolio-item .portfolio-item-title:hover {
+  transition: all 0.4s ease-out;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+/* ------------------------------------ Contact */
+ form{
+   border: 1px solid #343a40;
+   padding: 15px;
+   border-radius: 10px;
+ }
+  .form-control{
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+  }
+  .form-control:active, :hover, :focus{
+    box-shadow: none!important;
+  }
+.form-style {
+  width: 65%;
 }

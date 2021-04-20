@@ -6,89 +6,292 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      type="text/css"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
-      type="text/css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Resume</title>
   </head>
   <body>
-    <header class="main-background">
+    <header class="main-background" id="home">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="icon-circle">
-        <a class="navbar-brand icon-property" href="#">DC</a>
-      </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand icon-property" href="#">DC</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul class="navbar-nav fs-20">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
       <div class="container d-flex align-items-center flex-column mt-5">
         <img class="image-avatar mb-5" src="assets/images/avatar.png" alt="" />
-        <h1 class=" text-uppercase mb-0">Daniel Cherman</h1>
-        <hr class="heading-divider">
+        <h1 class="text-uppercase mb-0 heading-name">Daniel Cherman</h1>
+        <hr class="heading-divider" />
         <p class="mb-5">Full Stack Developer - CEO Triplex Lab</p>
-    </div>
+      </div>
     </header>
     <section>
-      <div class="light-background d-flex container align-items-center flex-column" >
-      <h2 class="text-center mt-4">Portfolio</h2>
-      <hr class="heading-divider">
+      <div
+        class="d-flex container align-items-center flex-column pb-5 portfolio"
+        id="portfolio"
+      >
+        <h2 class="text-center mt-4 text-uppercase heading-name">Portfolio</h2>
+        <hr class="heading-divider" />
+        <div class="row justify-content-center">
+          <!-- Portfolio 1-->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-toggle="modal"
+              data-target="#portfolioModal1"
+            >
+              <div
+                class="portfolio-item-title d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div class="text-center text-white">
+                  <i class="fa fa-plus fa-5x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="assets/images/portfolio.png" alt="" />
+            </div>
+          </div>
+          <!-- Portfolio 2-->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-toggle="modal"
+              data-target="#portfolioModal2"
+            >
+              <div
+                class="portfolio-item-title d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div class="text-center text-white">
+                  <i class="fa fa-plus fa-5x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="assets/images/portfolio.png" alt="" />
+            </div>
+          </div>
+          <!-- Portfolio 3-->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div
+              class="portfolio-item mx-auto"
+              data-toggle="modal"
+              data-target="#portfolioModal3"
+            >
+              <div
+                class="portfolio-item-title d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div class="text-center text-white">
+                  <i class="fa fa-plus fa-5x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="assets/images/portfolio.png" alt="" />
+            </div>
+          </div>
+          <!-- Portfolio 4-->
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+            <div
+              class="portfolio-item mx-auto"
+              data-toggle="modal"
+              data-target="#portfolioModal4"
+            >
+              <div
+                class="portfolio-item-title d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div class="text-center text-white">
+                  <i class="fa fa-plus fa-5x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="assets/images/portfolio.png" alt="" />
+            </div>
+          </div>
+          <!-- Portfolio 5-->
+          <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+            <div
+              class="portfolio-item mx-auto"
+              data-toggle="modal"
+              data-target="#portfolioModal5"
+            >
+              <div
+                class="portfolio-item-title d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div class="text-center text-white">
+                  <i class="fa fa-plus fa-5x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="assets/images/portfolio.png" alt="" />
+            </div>
+          </div>
+          <!-- Portfolio 6-->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="portfolio-item mx-auto"
+              data-toggle="modal"
+              data-target="#portfolioModal6"
+            >
+              <div
+                class="portfolio-item-title d-flex align-items-center justify-content-center h-100 w-100"
+              >
+                <div class="text-center text-white">
+                  <i class="fa fa-plus fa-5x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="assets/images/portfolio.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-flex align-items-center flex-column main-background"
+        id="about"
+      >
+        <h2 class="text-center text-uppercase mt-4 heading-name">About</h2>
+        <hr class="heading-divider" />
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <p class="lead">
+              Hi there! I'm Daniel and I am an enthusiastic Fullstack Developer
+              with strong collaboration skills, Adaptability and excellent
+              communication skills.
+            </p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <p class="lead">
+              I enjoy being challenged and engaging with projects that require
+              me to work outside my comfort and knowledge set.
+            </p>
+          </div>
+        </div>
+        <div class="text-center my-4">
+          <a
+            class="btn btn-xl btn-outline-dark"
+            href="assets/files/Daniel CV.pdf"
+            target="_blank"
+          >
+            Download CV
+          </a>
+        </div>
+      </div>
+      <div class="container d-flex align-items-center flex-column" id="contact">
+        <h2 class="text-center text-uppercase mt-4 heading-name">Contact</h2>
+        <hr class="heading-divider" />
+        <form action="" class="form-style mb-5 mt-3">
+          <input
+                type="text"
+                name="name"
+                id="fullname"
+                class="form-control"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Email"
+                required
+              />
+              <input
+                type="tel"
+                name="phone"
+                id="phoen"
+                class="form-control"
+                placeholder="Phone Number"
+                required
+              />
+              <textarea
+                name="message"
+                id="Message"
+                rows="5"
+                class="form-control"
+                placeholder="Message"
+                required
+              ></textarea>
+        <button type="submit" class="btn btn-dark">
+          Submit
+        </button>
+        </form>
+      </div>
       </div>
     </section>
     <footer class="footer text-center bg-dark">
       <div class="container text-light">
-          <div class="row py-4">
-              <div class="col-lg-4 mb-5 mb-lg-0">
-                  <h4 class="text-uppercase mb-4">Where I Live</h4>
-                  <p class="lead mb-0">
-                      Myrstuguvagen 119, 14332
-                      <br />
-                      Stockholm, Sweden
-                  </p>
-              </div>
-              <div class="col-lg-4 mb-5 mb-lg-0">
-                  <h4 class="text-uppercase mb-4">Social Media</h4>
-                  <a class="btn btn-outline-light mx-1" href="#"><i class="fa fa-facebook-f"></i></a>
-                  <a class="btn btn-outline-light mx-1" href="#"><i class="fa fa-twitter"></i></a>
-                  <a class="btn btn-outline-light mx-1" href="#"><i class="fa fa-linkedin"></i></a>
-                  <a class="btn btn-outline-light mx-1" href="#"><i class="fa fa-instagram"></i></a>
-              </div>
-              <div class="col-lg-4">
-                  <h4 class="text-uppercase mb-4">Download CV</h4>
-                  <p class="lead mb-0">
-                      You can download my CV 
-                      <a href="assets/files/Daniel CV.pdf" target="_blank">here</a>
-                      .
-                  </p>
-              </div>
+        <div class="row py-4">
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Where I Live</h4>
+            <p class="lead mb-0">
+              Myrstuguvagen 119, 14332
+              <br />
+              Stockholm, Sweden
+            </p>
           </div>
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Social Media</h4>
+            <a class="btn btn-outline-light mx-1" href="#"
+              ><i class="fa fa-instagram"></i
+            ></a>
+            <a class="btn btn-outline-light mx-1" href="#"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a class="btn btn-outline-light mx-1" href="#"
+              ><i class="fa fa-facebook-f"></i
+            ></a>
+            <a class="btn btn-outline-light mx-1" href="#"
+              ><i class="fa fa-twitter"></i
+            ></a>
+          </div>
+          <div class="col-lg-4">
+            <h4 class="text-uppercase mb-4">Download CV</h4>
+            <p class="lead mb-0">
+              You can download my CV
+              <a href="assets/files/Daniel CV.pdf" target="_blank">here</a>
+              .
+            </p>
+          </div>
+        </div>
       </div>
-  </footer>
+    </footer>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
