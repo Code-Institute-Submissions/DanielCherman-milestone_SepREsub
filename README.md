@@ -50,7 +50,7 @@ I tested in different resolutions to make sure that the site is working correctl
 
 ## Deployment
 
-I have deployed this project on Netlify to my own domain seidon.me
+I have deployed this project on Netlify to https://heuristic-yonath-ef407c.netlify.app domain
 
 This service is very convenient, since you just need to select your repository in github and the deployment process will automatically go through
 
