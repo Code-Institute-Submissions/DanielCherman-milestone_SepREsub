@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -19,12 +19,71 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
       type="text/css"
     />
-    <title>Daniel</title>
-</head>
-<body>
-    <header></header>
-    <section></section>
-    <footer></footer>
-    
-</body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Resume</title>
+  </head>
+  <body class="main-background">
+    <header >
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Daniel Cherman</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container d-flex align-items-center flex-column">
+        <img class="image-avatar mb-5" src="assets/images/avatar.png" alt="" />
+        <h1 class=" text-uppercase mb-0">Daniel Cherman</h1>
+        <hr class="heading-divider">
+        <p class="mb-5">Full Stack Developer - CEO Triplex Lab</p>
+    </div>
+    </header>
+    <section>
+      <div class="light-background" style="height: 300px;">Test</div>
+    </section>
+    <footer class="footer text-center bg-dark">
+      <div class="container text-light">
+          <div class="row py-4">
+              <div class="col-lg-4 mb-5 mb-lg-0">
+                  <h4 class="text-uppercase mb-4">Where I Live</h4>
+                  <p class="lead mb-0">
+                      Myrstuguvagen 119, 14332
+                      <br />
+                      Stockholm, Sweden
+                  </p>
+              </div>
+              <div class="col-lg-4 mb-5 mb-lg-0">
+                  <h4 class="text-uppercase mb-4">Social Media</h4>
+                  <a class="btn btn-outline-light mx-1" href="#"><i class="fa fa-facebook-f"></i></a>
+                  <a class="btn btn-outline-light mx-1" href="#"><i class="fa fa-twitter"></i></a>
+                  <a class="btn btn-outline-light mx-1" href="#"><i class="fa fa-linkedin"></i></a>
+                  <a class="btn btn-outline-light mx-1" href="#"><i class="fa fa-instagram"></i></a>
+              </div>
+              <div class="col-lg-4">
+                  <h4 class="text-uppercase mb-4">Download CV</h4>
+                  <p class="lead mb-0">
+                      You can download my CV 
+                      <a href="assets/files/Daniel CV.pdf" target="_blank">here</a>
+                      .
+                  </p>
+              </div>
+          </div>
+      </div>
+  </footer>
+  </body>
 </html>
