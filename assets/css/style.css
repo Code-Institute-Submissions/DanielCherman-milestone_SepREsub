@@ -20,6 +20,7 @@ background-color: #ede8e8;
   font-size: 50px;
   font-weight: 600;
   display: block;
+  text-align: center;
 }
 
 /* ------------------------------------ Header */
@@ -76,9 +77,10 @@ header{
 }
 /* ------------------------------------ Contact */
  form{
-   border: 1px solid #343a40;
+   border: 1px solid #ede8e8;
    padding: 15px;
    border-radius: 10px;
+   background-color: white;
  }
   .form-control{
     margin-bottom: 20px;
@@ -91,4 +93,26 @@ header{
   }
 .form-style {
   width: 65%;
+}
+
+/* ------------------------------- Skills */
+
+
+.frontend-style{
+  border: 3px solid #ede8e8;
+  border-radius: 15px;
+}
+.backend-style{
+  border: 3px solid #ede8e8;
+  border-radius: 15px;
+}
+.skill-style{
+  width: 100%;
+  margin-bottom: 35px
+}
+.progress{
+  margin-bottom: 15px;
+}
+.skills-align-center{
+  text-align: center;
 }
