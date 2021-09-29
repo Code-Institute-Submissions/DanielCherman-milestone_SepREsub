@@ -14,11 +14,13 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Resume</title>
   </head>
   <body>
-    <header class="main-background" id="home">
+    <!--------------------Header Section------------------->
+    <header class="main-background" id="home" data-aos="flip-right">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="icon-circle">
           <a class="navbar-brand icon-property" href="#">DC</a>
@@ -34,6 +36,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!--------------------Navbar data------------------->
         <div
           class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
@@ -61,10 +64,12 @@
         <p class="mb-5">Full Stack Developer - CEO Triplex Lab</p>
       </div>
     </header>
+    <!--------------------Portfolio Section------------------->
     <section>
       <div
         class="d-flex container align-items-center flex-column pb-5 portfolio"
         id="portfolio"
+        data-aos="flip-down"
       >
         <h2 class="text-center mt-4 text-uppercase heading-name">Portfolio</h2>
         <hr class="heading-divider" />
@@ -205,6 +210,8 @@
                   h-100
                   w-100
                 "
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
               >
                 <div class="text-center text-white">
                   <i class="fa fa-plus fa-5x"></i>
@@ -215,9 +222,46 @@
           </div>
         </div>
       </div>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--------------------About Section------------------->
       <div
         class="d-flex align-items-center flex-column main-background"
         id="about"
+        data-aos="fade-left"
       >
         <h2 class="text-center text-uppercase mt-4 heading-name">About</h2>
         <hr class="heading-divider" />
@@ -245,53 +289,196 @@
           >
         </div>
       </div>
-      <div class="container d-flex align-items-center flex-column" id="contact">
-        <h2 class="text-center text-uppercase mt-4 heading-name">Contact</h2>
-        <hr class="heading-divider" />
-        <form
-          action="mailto:daniel10050181@gmail.com"
-          class="form-style mb-5 mt-3"
+      <!--------------------Skills Section------------------->
+      <div class="d-flex align-items-center flex-column" id="skills">
+        <h2
+          class="text-center text-uppercase mt-4 heading-name"
+          data-aos="flip-right"
         >
-          <input
-            type="text"
-            name="name"
-            id="fullname"
-            class="form-control"
-            placeholder="Name"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="form-control"
-            placeholder="Email"
-            required
-          />
-          <input
-            type="tel"
-            name="phone"
-            id="phoen"
-            class="form-control"
-            placeholder="Phone Number"
-            required
-          />
-          <textarea
-            name="message"
-            id="Message"
-            rows="5"
-            class="form-control"
-            placeholder="Message"
-            required
-          ></textarea>
-          <button type="submit" class="btn btn-dark">Submit</button>
-        </form>
+          Skills
+        </h2>
+        <hr class="heading-divider" />
+        <div class="d-flex justify-content-around skill-style">
+          <div class="frontend-style col-lg-4" data-aos="fade-down-right">
+            <h3 class="skills-align-center">Frontend Skills</h3>
+            <h5>HTML</h5>
+            <div class="progress">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 70%"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <h5>CSS</h5>
+            <div class="progress">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 60%"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <h5>Javascript</h5>
+            <div class="progress">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 85%"
+                aria-valuenow="85"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <h5>Vue.js</h5>
+            <div class="progress">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 88%"
+                aria-valuenow="88"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <h5>React</h5>
+            <div class="progress">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 45%"
+                aria-valuenow="45"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+          <div class="backend-style col-lg-4" data-aos="fade-down-left">
+            <h3 class="skills-align-center">Backend Skills</h3>
+            <h5>Node.js</h5>
+            <div class="progress">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 80%"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <h5>Typescript</h5>
+            <div class="progress">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 75%"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <h5>GraphQL</h5>
+            <div class="progress">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 70%"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <h5>PostgreSQL</h5>
+            <div class="progress">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 77%"
+                aria-valuenow="77"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <h5>MongdoDB</h5>
+            <div class="progress">
+              <div
+                class="progress-bar bg-success"
+                role="progressbar"
+                style="width: 60%"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="d-flex align-items-center flex-column main-background"
+        id="contact"
+      >
+      <!--------------------Contact Section------------------->
+        <div
+          class="container d-flex align-items-center flex-column"
+        >
+          <h2
+            class="text-center text-uppercase mt-4 heading-name"
+            data-aos="flip-left"
+          >
+            Contact
+          </h2>
+          <hr class="heading-divider" />
+          <form
+            action="mailto:daniel10050181@gmail.com"
+            class="form-style mb-5 mt-3"
+            data-aos="flip-up"
+          >
+            <input
+              type="text"
+              name="name"
+              id="fullname"
+              class="form-control"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="tel"
+              name="phone"
+              id="phoen"
+              class="form-control"
+              placeholder="Phone Number"
+              required
+            />
+            <textarea
+              name="message"
+              id="Message"
+              rows="5"
+              class="form-control"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-dark">Submit</button>
+          </form>
+        </div>
       </div>
     </section>
+    <!--------------------Footer------------------->
     <footer class="footer text-center bg-dark">
       <div class="container text-light">
         <div class="row py-4">
-          <div class="col-lg-4 mb-5 mb-lg-0">
+          <div class="col-lg-3 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Where I Live</h4>
             <p class="lead mb-0">
               Myrstuguvagen 119, 14332
@@ -299,22 +486,34 @@
               Stockholm, Sweden
             </p>
           </div>
-          <div class="col-lg-4 mb-5 mb-lg-0">
+          <div class="col-lg-3 mb-5 mb-lg-0">
             <h4 class="text-uppercase mb-4">Social Media</h4>
-            <a class="btn btn-outline-light mx-1" href="https://instagram.com/cherman.daniel?utm_medium=copy_link" target="_blank"
+            <a
+              class="btn btn-outline-light mx-1"
+              href="https://instagram.com/cherman.daniel?utm_medium=copy_link"
+              target="_blank"
               ><i class="fa fa-instagram"></i
             ></a>
-            <a class="btn btn-outline-light mx-1" href="https://www.linkedin.com/in/daniel-cherman-50486718a/?originalSubdomain=se" target="_blank"
+            <a
+              class="btn btn-outline-light mx-1"
+              href="https://www.linkedin.com/in/daniel-cherman-50486718a/?originalSubdomain=se"
+              target="_blank"
               ><i class="fa fa-linkedin"></i
             ></a>
-            <a class="btn btn-outline-light mx-1" href="https://www.facebook.com/profile.php?id=100027300495618" target="_blank"
+            <a
+              class="btn btn-outline-light mx-1"
+              href="https://www.facebook.com/profile.php?id=100027300495618"
+              target="_blank"
               ><i class="fa fa-facebook-f"></i
             ></a>
-            <a class="btn btn-outline-light mx-1" href="https://twitter.com" target="_blank"
+            <a
+              class="btn btn-outline-light mx-1"
+              href="https://twitter.com"
+              target="_blank"
               ><i class="fa fa-twitter"></i
             ></a>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-3">
             <h4 class="text-uppercase mb-4">Download CV</h4>
             <p class="lead mb-0">
               You can download my CV
@@ -322,11 +521,34 @@
               .
             </p>
           </div>
+          <div class="col-lg-3 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Validations</h4>
+            <p>
+              <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                  <img style="border:0;width:88px;height:31px"
+                      src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                      alt="Valid CSS!" />
+                  </a>
+              </p>
+          </div>
         </div>
       </div>
     </footer>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1200 })
+    </script>
   </body>
 </html>
