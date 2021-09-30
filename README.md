@@ -1,4 +1,6 @@
-# Milestone Project 
+# Portfolio Website
+## Milestone Project 3 
+### [Demo Here](https://upbeat-brown-9ce248.netlify.app/)
 
 This project is a portfolio site for a developer, it was created to showcase his skills
  
@@ -35,6 +37,8 @@ and take a look at the resume
 - Active Contact form
 - Real Projects
 
+In second version i have implemented those features in addition it will be good to have ssl certificate to have secure form submission.
+
 ## Technologies Used
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -42,26 +46,26 @@ and take a look at the resume
 - [Bootstrap](https://getbootstrap.com/)
 
 
-## Testing
-
-As soon as it is just a Html and css it doesn't require a lot of testing but:
-
-I tested in different resolutions to make sure that the site is working correctly
+### Testing
+During Development so far i tested each block of the website separately.
+Manual testing was the main part of this project, As I was going for a user focus I wanted to ensure all parts of the project were user-centric and therefore manually adding in the code and ensuring the code was working before moving onto the next stage of development.
+I tested responsiveness on [Am I Responsive](http://ami.responsivedesign.is/) 
+In addition I checked the code using w3c css and markup validator and added confirmation of the succesfull validations on the website.
 
 ## Deployment
 
-I have deployed this project on Netlify to https://heuristic-yonath-ef407c.netlify.app domain
+I have deployed this project on Netlify to https://upbeat-brown-9ce248.netlify.app/ domain
 
 This service is very convenient, since you just need to select your repository in github and the deployment process will automatically go through
 
 
 
 ### Content
-- All content is taken from my cv and from me.
+- All content is taken from my cv and from my experience.
 ### Media
 - Avatar Photo is taken from free source [PNGWIND](https://www.pngwing.com/)
-- Portfolio photo is taken from free source [toppng](https://toppng.com/)
+- Portfolio photos is tipically part of the website which is represents
 
 ### Acknowledgements
 
-- I haven't precticed html and css for long time, because I mostly do logic programming using Javascript, but this project helped me to remember all features and tips in it
+- For the foirst time i failed this project because made in in hurry. Now i hope i fixed all the problems according to the report from code insitute. 
